@@ -3,6 +3,7 @@
 # }
 
 resource "aws_security_group" "Manikanta"{
+    name="Manikanta"
     ingress{
         from_port=22
         to_port=22
