@@ -20,6 +20,10 @@ variable "ec2_tags" {
     }
   
 }
+variable "instances"{
+    type=list
+    default=["mysql","backend","frontend"]
+}
 
 variable "from_port" {
     type=number
