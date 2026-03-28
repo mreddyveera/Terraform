@@ -24,7 +24,12 @@ variable "instances"{
     type=list
     default=["mysql","backend","frontend"]
 }
-
+variable "zone_id"{
+    default="Z0214488HJBJHBJHKVGB"
+}
+variable "domain_name"{
+    default="daws82s.online"
+}
 variable "from_port" {
     type=number
     default=22
@@ -51,4 +56,13 @@ variable "sg_tags" {
 variable "environment" {
     type = string
     default="dev"
+}
+
+variable "common_tags"{
+    type=map
+    default={
+        Project="expense"
+        Environment="dev"
+    }
+
 }
