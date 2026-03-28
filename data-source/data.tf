@@ -15,5 +15,5 @@ data "aws_ami" "Manikanta"{
     }
 }
 output "ami_id"{
-    value=data.aws_ami.joindevops.id
+    value=data.aws_ami.Manikanta.id
 }
