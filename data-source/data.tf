@@ -1,6 +1,6 @@
 data "aws_ami" "Manikanta"{
     most_recent=true
-    #owners=["973714476881"]
+    owners=["217248977811"]
     filter{
         name="name"
         values=["RHEL-9-DevOps-Practice"]
