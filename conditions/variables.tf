@@ -43,8 +43,3 @@ variable "sg_tags" {
     }
   
 }
-
-variable "environment" {
-    type ="string"
-    default="dev"
-}
