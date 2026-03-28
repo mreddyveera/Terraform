@@ -38,6 +38,8 @@ variable "cidr_blocks" {
 
 variable "sg_tags" {
     type=map
-    default="Terraform demo"
+    default={
+        Name="Terra_form"
+    }
   
 }
