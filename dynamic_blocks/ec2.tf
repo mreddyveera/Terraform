@@ -10,7 +10,7 @@ resource "aws_instance" "Manikanta" {
 resource "aws_security_group" "Manikanta" {
   name = "Manikanta"
   dynamic "ingress" { #terraform will give u block name fir iteration
-    for_each = var.ingress_ports
+    for_each = var.ingress
     content {
       from_port   = ingress.value[from_port]
       to_port     = ingress.value[to_port]

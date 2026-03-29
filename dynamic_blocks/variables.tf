@@ -50,8 +50,8 @@ variable "environment" {
 }
 
 
-variable "ingress_ports" {
-  type = list(any)
+variable "ingress" {
+  type = list
   default = [
     {
       from_port   = 22
