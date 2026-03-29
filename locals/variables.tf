@@ -45,7 +45,7 @@ variable "sg_tags" {
 }
 
 variable "environment" {
-    type ="string"
+    type =string
     default="dev"
 }
 
