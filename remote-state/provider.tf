@@ -8,7 +8,7 @@ terraform {
 }
 terraform {
   backend "s3" {
-    bucket = "manikanta-terraform-remote-state"
+    bucket = "manikanta-demo-remote"
     key    = "expense-backend-infra"  #shouid be unique keys
     region = "us-east-1"
     use_lockfile=true
