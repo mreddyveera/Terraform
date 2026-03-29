@@ -4,5 +4,5 @@ resource "aws_route53_record" "expense" {
   name    = "${each.key}.${var.domain_name}"
   type    = "A"
   ttl=1
-  records= [aws_instances.Manikanta[each.key].private_ip]
+  records= [aws_instance.Manikanta[each.key].private_ip]
 }
