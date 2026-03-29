@@ -10,7 +10,7 @@ terraform {
   backend "s3" {
     bucket = "manikanta-terraform-remote-state"
     key    = "expense-backend-infra"  #shouid be unique keys
-    region = "us-east-1"
+    region = "eu-north-1"
     use_lockfile=true
     #dynamodb_table = "Manikanta-dynamodb"
   }
