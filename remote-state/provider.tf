@@ -11,7 +11,8 @@ terraform {
     bucket = "manikanta-terraform-remote-state"
     key    = "expense-backend-infra"  #shouid be unique keys
     region = "us-east-1"
-    use_lockfile="Manikanta-dynamodb"
+    use_lockfile=true
+    dynamodb_table = "Manikanta-dynamodb"
   }
 }
 
