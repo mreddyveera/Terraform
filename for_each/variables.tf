@@ -6,3 +6,11 @@ variable "instances"{
         frontend="t3.micro"
     }
 }
+variable "domain_name"{
+    type=string
+    default="daws82s.online"
+}
+variable "zone_id"{
+    type=string
+    default="Z0214488HJBJHBJHKVGB"
+}
