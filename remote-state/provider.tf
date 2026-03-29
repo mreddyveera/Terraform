@@ -12,7 +12,7 @@ terraform {
     key    = "expense-backend-infra"  #shouid be unique keys
     region = "us-east-1"
     use_lockfile=true
-    dynamodb_table = "Manikanta-dynamodb"
+    #dynamodb_table = "Manikanta-dynamodb"
   }
 }
 
