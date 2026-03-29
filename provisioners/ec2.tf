@@ -8,7 +8,7 @@ resource "aws_instance" "Manikanta"{
     }
 
     provisioner "local-exec" {
-        command="echo The server's IP address is ${aws_instance.Manikanta.private_id}"
+        command="echo The server's IP address is ${aws_instance.Manikanta.private_ip}"
       
     }
 
