@@ -9,7 +9,7 @@ resource "aws_instance" "Manikanta"{
 }
 
 resource "aws_security_group" "Manikanta"{
-    name="Manikanta"
+    name="Manikanta-new"
     ingress{
         from_port=var.from_port
         to_port=var.to_port
