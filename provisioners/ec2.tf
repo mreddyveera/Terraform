@@ -8,8 +8,22 @@ resource "aws_instance" "Manikanta"{
     }
 
     provisioner "local-exec" {
-        command="echo ${self.private_ip} > inventory"
+        command="echo ${self.private_ip} >> inventory"
       
+    }
+    connection{
+        type="ssh"
+        user=ec2-user
+        password="DevOps321"
+        host=self.public_ip
+
+
+    }
+    provisioner "remote-exec"{
+        inline=[
+            "sudo dnf install nginx -y",
+            "sudo systemctl start nginx"
+        ]
     }
 
 }
