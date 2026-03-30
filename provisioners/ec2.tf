@@ -25,6 +25,12 @@ resource "aws_instance" "Manikanta"{
             "sudo systemctl start nginx"
         ]
     }
+    provisioner "remote-exec"{
+        when = destroy
+        inline=[
+            "sudo systemctl stop nginx"
+        ]
+    }
 
 }
 
