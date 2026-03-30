@@ -13,7 +13,7 @@ resource "aws_instance" "Manikanta"{
     }
     connection{
         type="ssh"
-        user=ec2-user
+        user="ec2-user"
         password="DevOps321"
         host=self.public_ip
 
