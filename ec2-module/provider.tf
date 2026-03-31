@@ -8,10 +8,10 @@ terraform {
 }
 terraform{
  backend "s3"{
-    bucket="82s-tf-remote-state"
+    bucket="manikanta-demo-remote"
     key="module-demo"
     region="us-east-1"
-    dynamodb_table="82s-state-locking"
+    dynamodb_table="Manikanta-dynamodb"
 }
 }
 
