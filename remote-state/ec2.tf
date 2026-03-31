@@ -3,7 +3,6 @@ resource "aws_instance" "Manikanta"{
    # instance_type =var.environment=="prod" ? "t3.small" :"t3.micro"
     instance_type=local.instnace_type
     vpc_security_group_ids =[aws_security_group.Manikanta.id]
-
     tags=var.ec2_tags
 
 }
